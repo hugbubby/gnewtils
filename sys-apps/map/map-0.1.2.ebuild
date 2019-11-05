@@ -17,8 +17,7 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_compile() {
-	dodir ./go
-	GOPATH=go build -mod=vendor
+	go build -mod=vendor
 }
 
 src_install() {
