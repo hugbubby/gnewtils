@@ -8,6 +8,7 @@ inherit golang-build
 DESCRIPTION="The map utility: Think Different."
 HOMEPAGE="https://github.com/hugbubby/${PN}"
 SRC_URI="https://github.com/hugbubby/${PN}/archive/v${PV}.zip"
+EGO_PN=github.com/hugbubby/map
 
 LICENSE="GPL-3"
 SLOT="0"
