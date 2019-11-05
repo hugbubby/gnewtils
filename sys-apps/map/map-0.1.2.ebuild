@@ -18,7 +18,7 @@ BDEPEND=""
 
 src_compile() {
 	dodir ./go
-	GOPATH=${WORKDIR}/go go build
+	GOPATH=go build -mod=vendor
 }
 
 src_install() {
