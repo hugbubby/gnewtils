@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit golang-build
-
 DESCRIPTION="The map utility: Think Different."
 HOMEPAGE="https://github.com/hugbubby/${PN}"
 SRC_URI="https://github.com/hugbubby/${PN}/archive/v${PV}.zip"
@@ -18,6 +16,10 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_compile() {
+	go build
+}
 
 src_install() {
 	dobin "${T}/map"
